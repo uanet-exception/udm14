@@ -71,7 +71,7 @@
     function search() {
       const searchTerm = document.getElementById("default-search").value + " -и -site:ru -site:by -site:su -site:ru.wikipedia.org";
       const encodedSearchTerm = encodeURIComponent(searchTerm);
-      const googleUrl = "https://www.google.com/search?udm=14&q=" + encodedSearchTerm;
+      const googleUrl = "https://www.google.com/search?udm=14&lr=-lang_ru&q=" + encodedSearchTerm;
       window.location.href = googleUrl;
     }
 
